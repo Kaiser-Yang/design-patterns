@@ -37,3 +37,4 @@ function(add_sub_project SUB_PROJECT_NAME)
 endfunction()
 
 add_sub_project(intro)
+add_sub_project(observer_pattern)
