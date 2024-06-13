@@ -12,6 +12,10 @@ find_program(CLANG_TIDY_EXE NAMES clang-tidy)
 function(add_sub_project SUB_PROJECT_NAME)
     file(GLOB_RECURSE ${SUB_PROJECT_NAME}_SOURCE src/${SUB_PROJECT_NAME}/*.cpp)
 
+    if (NOT ${SUB_PROJECT_NAME}_SOURCE)
+        return()
+    endif()
+
     add_executable(${SUB_PROJECT_NAME} ${${SUB_PROJECT_NAME}_SOURCE})
 
     set_target_properties(
@@ -36,5 +40,8 @@ function(add_sub_project SUB_PROJECT_NAME)
     endif()
 endfunction()
 
-add_sub_project(intro)
-add_sub_project(observer_pattern)
+file(GLOB SUB_DIRECTORY RELATIVE ${CMAKE_SOURCE_DIR}/src src/*)
+foreach(SUB_PROJECT ${SUB_DIRECTORY})
+    add_sub_project(${SUB_PROJECT})
+endforeach()
+
