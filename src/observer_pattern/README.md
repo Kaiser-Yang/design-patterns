@@ -1,3 +1,4 @@
+# The Observer Pattern
 In the example, we'll use the `observer pattern` to finish the weather application which can show different weather data. The `observer pattern` defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically. We have a `WeatherData` class, which is a subject. It has three observers: `CurrentConditionsDisplay`, `StatisticsDisplay`, and `ForecastDisplay`. The `WeatherData` object will notify these observers when the weather data has been updated. Besides, the `WeatherData` object is a sub-class of `Subject`, and the observers are sub-classes of `Observer`. All the observers implement the `update` method, which comes from the `Observer` class, to update their data when they are notified. All the observers have a method called `display`, which comes from the `DisplayElement` class, to display their data.
 
 The class diagram is shown below:
