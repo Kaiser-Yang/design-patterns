@@ -39,3 +39,6 @@ build
 
 # markdown replacer
 replace_md_image.py
+
+# back up files
+*backup*
