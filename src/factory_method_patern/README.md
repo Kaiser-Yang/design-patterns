@@ -3,4 +3,4 @@ In this case, we use the factory method pattern to create a factory that can cre
 
 The class diagram is shown below:
 
-![](README.assets/20240614194705.png)
+![](README.assets/20240616222650.png)
