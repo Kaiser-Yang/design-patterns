@@ -16,9 +16,10 @@ public:
         return pizza;
     }
 
-    virtual Pizza createPizza(const std::string &type) = 0;
-
     inline virtual ~PizzaStore() = default;
+
+protected:
+    virtual Pizza createPizza(const std::string &type) = 0;
 };
 
 #endif

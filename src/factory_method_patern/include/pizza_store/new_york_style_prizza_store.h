@@ -9,7 +9,7 @@
 #include "pizza_store.h"
 
 class NewYorkStylePizzaStore : public PizzaStore {
-public:
+protected:
     Pizza createPizza(const std::string &type) override {
         Pizza pizza;
         if (type == "cheese") {
