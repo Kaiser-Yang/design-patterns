@@ -6,7 +6,7 @@
 class VeggiePizza : public Pizza {
 public:
     VeggiePizza() {
-        name = "Veggie Pizza";
+        name  = "Veggie Pizza";
         dough = "Crust";
         sauce = "Marinara sauce";
         toppings.push_back("Shredded mozzarella");

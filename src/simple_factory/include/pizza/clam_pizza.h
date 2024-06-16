@@ -6,7 +6,7 @@
 class ClamPizza : public Pizza {
 public:
     ClamPizza() {
-        name = "Clam Pizza";
+        name  = "Clam Pizza";
         dough = "Thin crust";
         sauce = "White garlic sauce";
         toppings.push_back("Clams");
