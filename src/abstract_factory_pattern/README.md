@@ -3,4 +3,4 @@ In this case, different stores will use different ingredients to make their pizz
 
 The class diagram is shown below:
 
-![](https://raw.githubusercontent.com/Kaiser-Yang/image-hosting-site/main/20240421-20250421/20240617172608.png)
+![](README.assets/20240617172608.png)
