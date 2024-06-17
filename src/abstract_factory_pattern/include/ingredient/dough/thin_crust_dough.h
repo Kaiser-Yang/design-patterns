@@ -3,7 +3,6 @@
 
 #include "dough.h"
 
-class ThinCrustDough : public Dough {
-};
+class ThinCrustDough : public Dough {};
 
 #endif

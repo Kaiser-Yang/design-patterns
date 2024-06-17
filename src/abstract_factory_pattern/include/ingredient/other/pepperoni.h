@@ -3,7 +3,6 @@
 
 #include <string>
 
-class Pepperoni {
-};
+class Pepperoni {};
 
 #endif

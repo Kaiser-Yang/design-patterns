@@ -9,8 +9,7 @@
 class CheesePizza : public Pizza {
 public:
     CheesePizza(std::unique_ptr<PizzaIngredientFactory> ingredientFactory)
-        : Pizza(std::move(ingredientFactory)) {
-    }
+        : Pizza(std::move(ingredientFactory)) {}
 };
 
 #endif

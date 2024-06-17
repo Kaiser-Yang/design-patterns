@@ -3,7 +3,6 @@
 
 #include "cheese.h"
 
-class MozzarellaCheese : public Cheese {
-};
+class MozzarellaCheese : public Cheese {};
 
 #endif

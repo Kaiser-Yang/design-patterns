@@ -9,8 +9,7 @@
 class ClamPizza : public Pizza {
 public:
     ClamPizza(std::unique_ptr<PizzaIngredientFactory> ingredientFactory)
-        : Pizza(std::move(ingredientFactory)) {
-        }
+        : Pizza(std::move(ingredientFactory)) {}
 };
 
 #endif

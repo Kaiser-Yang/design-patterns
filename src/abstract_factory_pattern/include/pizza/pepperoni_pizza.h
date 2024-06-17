@@ -3,14 +3,13 @@
 
 #include <memory>
 
-#include "pizza.h"
 #include "ingredient/other/pepperoni.h"
+#include "pizza.h"
 
 class PepperoniPizza : public Pizza {
 public:
     PepperoniPizza(std::unique_ptr<PizzaIngredientFactory> ingredientFactory)
-        : Pizza(std::move(ingredientFactory)) {
-        }
+        : Pizza(std::move(ingredientFactory)) {}
 };
 
 #endif

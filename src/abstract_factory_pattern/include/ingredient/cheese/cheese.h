@@ -2,7 +2,6 @@
 #define DESIGN_PATTERNS_CHEESE_H
 
 #include <string>
-class Cheese {
-};
+class Cheese {};
 
 #endif

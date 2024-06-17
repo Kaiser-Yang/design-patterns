@@ -2,7 +2,6 @@
 #define DESIGN_PATTERNS_DOUGH_H
 
 #include <string>
-class Dough {
-};
+class Dough {};
 
 #endif

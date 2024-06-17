@@ -3,7 +3,6 @@
 
 #include "sauce.h"
 
-class PlumTomatoSauce : public Sauce {
-};
+class PlumTomatoSauce : public Sauce {};
 
 #endif

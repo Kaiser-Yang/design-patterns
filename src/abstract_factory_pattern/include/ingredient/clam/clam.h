@@ -3,7 +3,6 @@
 
 #include <string>
 
-class Clam {
-};
+class Clam {};
 
 #endif

@@ -3,7 +3,6 @@
 
 #include "clam.h"
 
-class FreshClam : public Clam {
-};
+class FreshClam : public Clam {};
 
 #endif

@@ -3,7 +3,6 @@
 
 #include "sauce.h"
 
-class MarinaraSauce : public Sauce {
-};
+class MarinaraSauce : public Sauce {};
 
 #endif
