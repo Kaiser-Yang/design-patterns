@@ -108,10 +108,10 @@ public:
         if (instance.load(std::memory_order_relaxed) == nullptr) {
             std::lock_guard<std::mutex> lock(mu);
             if (instance.load() == nullptr) {
-                instance.store(new Singleton(), std::memory_order_relaxed);
+                instance.store(new Singleton(), std::memory_order_release);
             }
         }
-        return *instance.load(std::memory_order_relaxed);
+        return *instance.load(std::memory_order_acquire);
     }
 
 private:
@@ -126,9 +126,7 @@ std::mutex Singleton::mu;
 std::atomic<Singleton *> Singleton::instance;
 ```
 
-The `std::atomic` make the creation of the instance atomic. The `std::atomic` not only can be used to make the operation atomic, but also can be used to insure the order of the operations. In this case we only need to insure the atomicity of the operation, so we use `std::memory_order_relaxed`, which means we don't care about the memory order.
-
-NOTE: The `std::memory_order_relaxed` is used to tell the compiler that the order of the operations is not important. The `std::memory_order_relaxed` is the most efficient one. If you want to insure the order of the operations, you can use `std::memory_order_acquire` and `std::memory_order_release`. The `std::memory_order_acquire` is used to insure that the operations before the `std::memory_order_acquire` will be executed before the `std::memory_order_acquire`. The `std::memory_order_release` is used to insure that the operations after the `std::memory_order_release` will be executed after the `std::memory_order_release`.
+The `std::atomic` make the creation of the instance atomic. The `std::atomic` not only can be used to make the operation atomic, but also can be used to insure the order of the operations. In this case we use `std::memory_order_acquire` and `std::memory_order_release` to insure the order of the operations. The `std::memory_order_release` is used with `store` and this will ensure the operations before the `store` will be executed before the `store`. The `std::memory_order_acquire` is used with `load` and this will ensure the operations after the `load` will be executed after the `load`.  With this ensure, the `double check` will be correct (the step of calling the constructor will never happens before `store`).
 
 A little tricky, right? There is a simple one from `C++ 11`:
 
