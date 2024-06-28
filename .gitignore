@@ -42,3 +42,6 @@ replace_md_image.py
 
 # back up files
 *backup*
+
+# root directory signature
+.root
