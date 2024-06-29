@@ -5,12 +5,8 @@
 
 class TV {
 public:
-    void on() const {
-        std::cout << "TV is on" << std::endl;
-    }
-    void off() const {
-        std::cout << "TV is off" << std::endl;
-    }
+    void on() const { std::cout << "TV is on" << std::endl; }
+    void off() const { std::cout << "TV is off" << std::endl; }
 };
 
 #endif

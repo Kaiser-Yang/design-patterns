@@ -2,6 +2,7 @@
 #define DESIGN_PATTERNS_FACTORY_METHOD_CHICAGO_STYLE_PIZZA_STORE_H
 
 #include <memory>
+
 #include "pizza/chicago_style_pizza/chicago_style_cheese_pizza.h"
 #include "pizza/chicago_style_pizza/chicago_style_clam_pizza.h"
 #include "pizza/chicago_style_pizza/chicago_style_pepperoni_pizza.h"

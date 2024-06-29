@@ -2,11 +2,11 @@
 #include <memory>
 
 #include "adapter/turkey_adpater.h"
-#include "turkey/wild_trukey.h"
 #include "duck/duck.h"
+#include "turkey/wild_trukey.h"
 
 void AdapterPatternTest() {
-    std::shared_ptr<Turkey> turkey = std::make_shared<WildTurkey>();
+    std::shared_ptr<Turkey> turkey      = std::make_shared<WildTurkey>();
     std::shared_ptr<Duck> turkeyAdapter = std::make_shared<TurkeyAdapter>(turkey);
 
     std::cout << "The Turkey says..." << std::endl;

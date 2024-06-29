@@ -3,4 +3,4 @@ In this case, we use the adapter pattern to make a `Turkey` can be seen as a `Du
 
 There are two ways which can implement the adapter pattern, their class diagrams are shown below (inheritance versus composition):
 
-![](https://raw.githubusercontent.com/Kaiser-Yang/image-hosting-site/main/20240421-20250421/20240628111429.png)
+![](README.assets/20240628111429.png)

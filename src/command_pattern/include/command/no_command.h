@@ -7,12 +7,8 @@
 
 class NoCommand : public Command {
 public:
-    void execute() override {
-        std::cout << "No command" << std::endl;
-    }
-    void undo() override {
-        std::cout << "No command" << std::endl;
-    }
+    void execute() override { std::cout << "No command" << std::endl; }
+    void undo() override { std::cout << "No command" << std::endl; }
 };
 
 #endif
