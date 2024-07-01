@@ -11,9 +11,9 @@
 
 class Waitress {
 public:
-    void addMenu(const std::shared_ptr<Menu> &menu) { menus.push_back(menu); }
+    void addMenu(const std::shared_ptr<Menu> &menu) { menuVec.push_back(menu); }
     void printMenu() {
-        for (const auto &menu : menus) {
+        for (const auto &menu : menuVec) {
             auto iter = menu->createIterator();
             while (iter->hasNext()) {
                 MenuItem &item = iter->next();
@@ -24,7 +24,7 @@ public:
     }
 
 private:
-    std::vector<std::shared_ptr<Menu>> menus;
+    std::vector<std::shared_ptr<Menu>> menuVec;
 };
 
 #endif
