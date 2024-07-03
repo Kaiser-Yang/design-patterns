@@ -3,4 +3,4 @@ In this case, we'll use the composite pattern to create a menu that contains bot
 
 The class diagram of the composite pattern is shown below:
 
-![](https://raw.githubusercontent.com/Kaiser-Yang/image-hosting-site/main/20240421-20250421/20240701210735.png)
+![](README.assets/20240701210735.png)

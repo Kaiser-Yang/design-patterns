@@ -3,4 +3,4 @@ The iterator pattern is a design pattern in which an iterator is used to travers
 
 The class diagram is shown below:
 
-![](https://raw.githubusercontent.com/Kaiser-Yang/image-hosting-site/main/20240421-20250421/20240701193338.png)
+![](README.assets/20240701193338.png)
