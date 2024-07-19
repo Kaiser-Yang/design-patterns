@@ -30,3 +30,18 @@
 *.exe
 *.out
 *.app
+
+# build
+build
+
+# clangd cache
+.cache
+
+# markdown replacer
+replace_md_image.py
+
+# back up files
+*backup*
+
+# root directory signature
+.root
