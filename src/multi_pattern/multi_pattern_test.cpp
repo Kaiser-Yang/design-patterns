@@ -12,7 +12,7 @@ size_t QuackCounter::quacks = 0;
 
 void simulate(std::shared_ptr<Quackable> duck) { duck->quack(); }
 
-void CompoundPatternTest() {
+void MultiPatternTest() {
     std::unique_ptr<AbstractFactory> factory = std::make_unique<CountingDuckFactory>();
 
     std::shared_ptr<Flock> flockOfDucks = FactoryMethod::createFlock();
@@ -45,6 +45,6 @@ void CompoundPatternTest() {
 }
 
 int main() {
-    CompoundPatternTest();
+    MultiPatternTest();
     return 0;
 }
